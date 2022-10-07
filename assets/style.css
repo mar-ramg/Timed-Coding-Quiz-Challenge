@@ -28,8 +28,7 @@ body{
     padding-bottom: 70px;
 }
 
-.intro{
-    display: none;
+.intro {
     text-align: center;
 }
 
@@ -86,6 +85,12 @@ main{
     cursor: pointer;
 }
 
+.check-answer{
+    font-size: 30px;
+    margin-top: 20px;
+    color: grey;
+}
+
 .finished-screen{
     display: none;
     margin: 20px;
@@ -124,6 +129,10 @@ main{
     padding: 5px;
     border-radius: 9px;
     cursor: pointer;
+}
+
+.highscores-screen{
+    display: none;
 }
 
 .highscores-screen h2{
