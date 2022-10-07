@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.outer-container{
+    padding: 20px;
+}
+
+.top button{
+    outline: none;
+    color: purple;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.top p{
+    float: right;
+    font-size: 20px;
+}
+
+.top{
+    padding-bottom: 70px;
+}
+
+.intro{
+    display: none;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.intro p{
+    font-size: 20px;
+}
+
+.intro button{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+main{
+    justify-content: center;
+    margin-left: 43%;
+    display: block;
+}
+
+.question-screen{
+    display: none;
+    text-align: left;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.question-screen h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.question-screen li{
+    list-style-type: none;
+}
+
+.question-screen li button{
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.finished-screen{
+    display: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.finished-screen h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finished-screen p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.initials{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.initials button{
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.highscores-screen h2{
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+.highscores-screen ol{
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.highscores-screen button{
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+
