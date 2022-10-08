@@ -29,6 +29,7 @@ body{
 }
 
 .intro {
+    display: none;
     text-align: center;
 }
 
@@ -58,7 +59,6 @@ main{
 }
 
 .question-screen{
-    display: none;
     text-align: left;
     align-items: center;
     margin: 20px;

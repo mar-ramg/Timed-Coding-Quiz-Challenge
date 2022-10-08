@@ -25,3 +25,30 @@ var scoreRecord = document.querySelector("#score-record");
 var backBtn = document.querySelector("#back-button");
 var clearBtn = document.querySelector("#clear-button");
 
+var questionSource = [
+    {
+        question: "String values must be enclosed within _____ when being assigned to variables.",
+        choices: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
+        answer: "c"
+    },
+    {
+        question: "Commonly used data types DO NOT include:",
+        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
+        answer: "c"
+    },
+    {
+        question: "The first index of an array is ____.",
+        choices: ["a. 1", "b. 8", "c. any", "d. 0"],
+        answer: "d"
+    },
+    {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        choices: ["a. onclick", "b. onchange", "c. onmouseclick", "d. click"],
+        answer: "a"
+    },
+    {
+        question: "What color is #FFFFFF?",
+        choices: ["a. black", "b. white", "c. grey", "d. gold"],
+        answer: "b"
+    }
+]
