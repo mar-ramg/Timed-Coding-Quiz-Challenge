@@ -52,3 +52,29 @@ var questionSource = [
         answer: "b"
     }
 ]
+
+var timeLeft = document.getElementById("time");
+
+var secondsLeft = 60;
+var questionNumber = 0;
+var totalScore = 0;
+var questionCount = 1;
+
+function countdown() {
+    var timerInterval = setInterval(function () {
+        secondsLeft--;
+        timeLeft.textContent = "Timer:" + secondsLeft + "s";
+
+        if(secondsLeft <=0){
+            clearInterval(timerInterval);
+            timeLeft.textContent = "Time is up!";
+            finish.textContent = "Time is up!";
+            gameOver();
+        } 
+        else if(questionCount >= questionSource.length +1) {
+            clearInterval(timerInterval);
+            gameOver();
+        }
+    }, 1000);
+    
+}
