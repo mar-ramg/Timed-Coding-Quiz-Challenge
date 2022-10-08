@@ -78,3 +78,33 @@ function countdown() {
     }, 1000);
     
 }
+
+function startQuiz() {
+    welcome.style.display ="none";
+    questionScreen.style.display ="block";
+    questionNumber = 0;
+    countdown();
+    showQuestion(questionNumber);
+}
+
+function showQuestion(n) {
+    question.textContent = questionSource[n].question;
+    answerBtn1.textContent = questionSource[n].choices[0];
+    answerBtn2.textContent = questionSource[n].choices[1];
+    answerBtn3.textContent = questionSource[n].choices[2];
+    answerBtn4.textContent = questionSource[n].choices[3];
+    questionNumber = n;
+}
+
+function answerCheck (event) {
+    event.preventDefault();
+    answerCheck.style.display = "block";
+    setTimeout(function () {
+        answerCheck.style.display = "none";
+    }, 1000);
+}
+
+
+
+
+
