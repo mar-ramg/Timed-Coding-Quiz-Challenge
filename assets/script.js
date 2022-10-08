@@ -76,8 +76,9 @@ function countdown() {
             gameOver();
         }
     }, 1000);
-    
+    console.log(countdown)
 }
+
 
 function startQuiz() {
     welcome.style.display ="none";
@@ -85,6 +86,7 @@ function startQuiz() {
     questionNumber = 0;
     countdown();
     showQuestion(questionNumber);
+    console.log(startQuiz)
 }
 
 function showQuestion(n) {
@@ -102,8 +104,33 @@ function answerCheck (event) {
     setTimeout(function () {
         answerCheck.style.display = "none";
     }, 1000);
+
+    if (questionSource[questionNumber].answer == event.target.value) {
+        answerCheck.textContent = "Correct";
+        totalScore = totalScore +1;
+    } else {
+        secondsLeft =secondsLeft -10;
+        answerCheck.textContent = "Wrong. The correct answer is" + questionSource[questionNumber].answer + " .";
+    }
+
+    if (questionNumber < questionSource.length -1) {
+        showQuestion(questionNumber +1);
+    } else {
+        gameOver();
+    }
+   questionCount++; 
 }
 
+
+
+
+
+
+startBtn.addEventListener("click", startQuiz);
+
+reactButton.forEach(function(click) {
+    click.addEventListener("click", answerCheck);
+});
 
 
 

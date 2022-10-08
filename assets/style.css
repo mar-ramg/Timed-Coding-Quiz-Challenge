@@ -129,7 +129,7 @@ main{
     cursor: pointer;
 }
 
-.highscores-screen{
+.question-screen, .finished-screen, .highscores-screen, .check-answer {
     display: none;
 }
 
