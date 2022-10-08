@@ -121,6 +121,40 @@ function answerCheck (event) {
    questionCount++; 
 }
 
+function gameOver() {
+    questionScreen.style.display = "none";
+    highscorePage.style.display = "block";
+    console.log(scoreBoard);
+    score.textContent = "Your Score:" + totalScore;
+    timeLeft.style.display = "none";
+}
+
+function getScore () {
+    var currentList = localStorage.getItem("ScoreList");
+    if (currentList !== null) {
+        freshList = JSON.parse(currentList);
+            return freshList;
+    } else {
+        freshList = [];
+    }
+    return freshList;
+}
+
+function renderScore () {
+    scoreRecord.innerHTML = "";
+    scoreRecord.style.display = "block";
+    var highScores = sort();
+    var topFive = highScores.slice(0,5);
+    for (var i = 0; i < topFive.length; i++) {
+        var item = topFive[i];
+    
+    var li = document.createElement("li");
+    li.textContent = item.userInitial + "-" + item.score;
+    li.setAttribute("data-index", i);
+    scoreRecord.appendChild(li);    
+    }
+
+}
 
 
 
