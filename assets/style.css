@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font-family: sans-serif;
 }
@@ -12,146 +6,85 @@ body{
     padding: 20px;
 }
 
-.top button{
+button{
     outline: none;
-    color: purple;
+    color: white;
+    background-color: purple;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 9px;
+    margin: 5px;
+    padding: 10px;
 }
 
-.top p{
+#top #timer {
     float: right;
     font-size: 20px;
 }
 
-.top{
-    padding-bottom: 70px;
-}
-
-.intro {
+#introduction {
     text-align: center;
+    margin-top: 90px;
 }
 
-.intro h1{
+#introduction h1{
     font-size: 40px;
+    padding-bottom: 20px;
+}
+
+
+#introduction p{
+    font-size: 20px;
     padding-bottom: 40px;
 }
 
-.intro p{
-    font-size: 20px;
+.question_page{
+    text-align: center;
 }
 
-.intro button{
-    margin-top: 30px;
-    padding: 10px;
-    background-color: purple;
-    color: white;
-    font-size: 20px;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
-main{
-    justify-content: center;
-    margin-left: 43%;
-    display: block;
-}
-
-.question-screen{
-    text-align: left;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-
-}
-
-.question-screen h2{
+.question_page h2{
     font-size: 38px;
     margin-bottom: 20px;
+
 }
 
-.question-screen li{
+.question_page li{
     list-style-type: none;
 }
 
-.question-screen li button{
-    background-color: purple;
-    color: white;
-    font-size: 20px;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
-.check-answer{
+#check_line{
     font-size: 30px;
     margin-top: 20px;
     color: grey;
 }
 
-.finished-screen{
-    margin: 20px;
-    padding: 10px;
+#submit_page {
+    text-align: center;
 }
 
-.finished-screen h2{
+#submit_page h2 {
     font-size: 38px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.finished-screen p{
+#submit_page p {
     font-size: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.initials{
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+#highscore_page {
+    text-align: center;
 }
 
-.initials button{
-    background-color: purple;
-    color: white;
-    font-size: 20px;
-    margin: 3px;
-    padding: 5px;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
-.question-screen, .finished-screen, .highscores-screen, .check-answer {
-    display: none;
-}
-
-.highscores-screen h2{
-    margin-bottom: 20px;
+#highscore_page h2 {
     font-size: 38px;
-}
-
-.highscores-screen ol{
-    list-style-type: none;
-    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.highscores-screen button{
-    cursor: pointer;
-    background-color: purple;
-    color: white;
+#highscore_page p {
     font-size: 20px;
-    margin: 3px;
-    padding: 5px;
-    border-radius: 9px;
 }
 
+.question_page, .submit_page, .highscore_page, #check_line {
+    display:none;
+}
 
